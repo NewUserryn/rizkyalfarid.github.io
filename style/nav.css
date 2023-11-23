@@ -125,6 +125,7 @@ header nav {
     text-align: center;
     transition: right 300ms ease-in-out; 
     z-index: 200;
+    display: none;
   }
 
   .show {

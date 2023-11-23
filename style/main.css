@@ -1,6 +1,9 @@
 @import url('./nav.css');
 @import url('./profile.css');
 @import url('./about.css');
+@import url('./skill.css');
+@import url('./project.css');
+@import url('./footer.css');
 
 * {
   margin: 0;

@@ -90,7 +90,7 @@ header nav {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   /* hilangkan tombol download cv */
   .btn-cv {
     display: none;
@@ -111,6 +111,7 @@ header nav {
     margin-right: 20px;
     position: relative;
     cursor: pointer;
+    z-index: 300;
   }
 
   .navigation {
@@ -123,7 +124,8 @@ header nav {
     background-color: #a7a9be;
     width: 200px;
     text-align: center;
-    transition: right 300ms ease-in-out; /* Menyesuaikan properti animasi */
+    transition: right 300ms ease-in-out; 
+    z-index: 200;
   }
 
   .show {

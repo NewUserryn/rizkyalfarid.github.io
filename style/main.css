@@ -1,0 +1,12 @@
+@import url(nav.css);
+@import url(profile.css);
+
+body {
+  background-color: #0f0e17;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

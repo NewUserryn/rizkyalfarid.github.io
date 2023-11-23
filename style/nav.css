@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../public/font/Quicksand-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Quicksand-bold';
+  src: url('./../public/font/Quicksand-VariableFont_wght.ttf');
+}
+
+:root {
+  --background : #0f0e17;
+  --headline : #fffffe;
+  --paragraph : #a7a9be;
+  --button : #ff8906;
+  --button-text: #fffffe;
+
+  /* ilustration */
+
+  --stroke : black;
+  --main : #fffffe;
+  --hightligh : #ff8906;
+  --secondary : #f25f4c;
+  --tertiry : #e53170;
+}
+
+header {
+  width: 100%;
+  /* background-color: var(--hightligh); */
+  position: absolute;
+}
+
+header nav  {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--button-text);
+}
+
+.nav-brand {
+  font-weight: bolder;
+  font-family: 'Quicksand-bold', Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+}
+
+.nav-brand span {
+  color: var(--button);
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: var;
+  padding: 0 15px;
+  color: var(--button-text);
+  font-size: 1em;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+.navigation li a:hover {
+  color: var(--button);
+}
+
+.btn-cv {
+  padding: 7px 7px;
+  outline: none;
+  border: none;
+  background-color: var(--button);
+  color: white;
+  font-weight: 700;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width : 800px) {
+  /* hilang kan button dowload cv */
+  .btn-cv {
+    display: none;
+  } 
+
+  header nav {
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    margin-left: 20px;
+    font-size: 1.6em;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 2em;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .navigation {
+    position: absolute;
+    right: -210px;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #a7a9be;
+    width: 200px;
+    text-align: center;
+    transition: 300ms;
+  }
+
+  .show {
+    right: 0;
+  }
+}

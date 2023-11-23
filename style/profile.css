@@ -25,7 +25,7 @@
 }
 
 .main-profile {
-  min-height: 100vh; /* Mengganti height menjadi min-height agar konten tetap terlihat pada layar kecil */
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -70,10 +70,12 @@
   font-weight: bold;
   font-family: 'Quicksand';
   letter-spacing: 1px;
+  transition: 300ms;
 }
 
 .button button:hover {
-  background-color: #e57a00;
+  background-color: #c36800;
+  position: relative;
 }
 
 .image-profile {
